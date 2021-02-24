@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/backgroundcolor"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/namereg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Name" />
+    <EditText
+        android:id="@+id/passreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/namereg"/>
+    <EditText
+        android:id="@+id/emailreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/passreg"/>
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/emailreg"
+        android:layout_centerInParent="true"
+        android:text="Register"/>
+    <TextView
+        android:id="@+id/userreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALready signed in"
+        android:layout_below="@+id/regbtn"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
